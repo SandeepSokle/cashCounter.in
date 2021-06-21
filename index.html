@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>Calculator Your Money</h1><h5>(upto 1.7976931348623157e+308) </h5>
+        </div>
+    <div class="calculator-container">
+      <div class="container">
+        <div class="grid">
+          <div class="rupee">
+            <div class="cash">2000</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">500</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">200</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">100</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">50</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">20</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">10</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">5</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+          <div class="rupee">
+            <div class="cash">1</div>
+            <div class="x" style="background-color: white">X</div>
+            <div class="quantity" contenteditable>0</div>
+            <div class="x" style="background-color: white">=</div>
+            <div class="totalquantity">0</div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="total">
+            <p>Total=</p>
+            <div class="totalValue">0</div>
+          </div>
+          <div class="btn">
+            <button type="submit" class="submitBtn">Calculate</button>
+            <button type="reset" class="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="history">
+        <div class="resetHistory"></div>
+        <span class="p"
+          >History
+          <button type="reset" class="reset">Reset History</button>
+        </span>
+        <div class="historyData">
+          <!-- <div class="historyBox">7858</div> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
