@@ -21,7 +21,7 @@ body {
 
 .calculator-container {
   background-color: bisque;
-  height: 84%;
+  height: 90%;
   width: 100%;
   display: flex;
   overflow: auto;
@@ -168,6 +168,12 @@ p,
   width: 28%;
   outline: none;
   overflow: auto;
+}
+.quantity{
+  text-align: center;
+  overflow: hidden;
+  outline: none;
+  
 }
 
 .reset {
