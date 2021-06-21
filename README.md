@@ -1,17 +1,22 @@
 # cashCounter.in
 
+
+I am just creating a cash counter calculator for the practice of DOM and LocalStorage
+
+this work well on computer and mobile also:
+
 Calculate money using this Web app
 
-Alowed input only number value.except value not enter (you can enter 2e34).
+Allowed input only numeric value. except for value not enter (you can enter 2e34).
 
 history of calculation recode automatic
 
-if error in input (enter non number value) erase only that input but another values are unchanged
+if an error in input (enter non-number value) erase only that input but other values are unchanged
 
-when click on calulate button value show in history
+when clicking on calculate button value show in the history
 
-calculate money in two type one is same type of money and total value
+calculate the money in two type one is the same type of money and total value
 
-reset button can reset all values from calculator
+the reset button can reset all values from the calculator
 
 reset history button clear all history
