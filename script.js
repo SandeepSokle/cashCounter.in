@@ -48,7 +48,8 @@ for (let i = 0; i < quantities.length; i++) {
       }})
 
   quantities[i].addEventListener("keyup", function (e) {
-    if(isNaN(e.key)){
+
+    if(isNaN(e.key) && e.key != "Backspace" &&  quantities[i].innerText!="" ){
         quantities[i].innerText = 0;
         quantitiesres[i].innerText = 0;
         alert("Enter Only Number:");
@@ -77,7 +78,8 @@ function findSum() {
 
 function appendOnRefresh() {
   tasks = JSON.parse(localStorage.getItem("tasks"));
-  historyDiv.innerHTML = "";
+  if(tasks==null) tasks =[];
+    historyDiv.innerHTML = "";
   for (let i = tasks.length - 1; i >= 0; i--) {
     let div = document.createElement("div");
     div.classList.add("historyBox");

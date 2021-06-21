@@ -129,7 +129,6 @@ p,
   background-color: #e63c80;
   margin: 4px;
   /* display: flex;  */
-  overflow: auto;
   font-size: 21px;
   text-align: center;
 }
