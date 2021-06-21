@@ -3,6 +3,10 @@ let result = document.querySelector(".totalValue");
 let calBtn = document.querySelector(".submitBtn");
 let resetBtn = document.querySelector(".resetBtn");
 let values = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
+let isFirstClick = [];
+for(let i=0;i<9;i++){
+    isFirstClick.push(true);
+}
 let sum1 = 0;
 let sum2 = 0;
 let historyDiv = document.querySelector(".historyData");
@@ -36,6 +40,13 @@ resetBtn.addEventListener("click", function () {
 
 // let quantities = document.querySelectorAll(".quantity");
 for (let i = 0; i < quantities.length; i++) {
+
+    quantities[i].addEventListener("click", function (e){
+    if(isFirstClick[i]){
+        quantities[i].innerText ="";
+          isFirstClick[i]=false;
+      }})
+
   quantities[i].addEventListener("keyup", function (e) {
     if(isNaN(e.key)){
         quantities[i].innerText = 0;
